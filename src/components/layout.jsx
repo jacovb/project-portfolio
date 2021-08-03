@@ -35,7 +35,9 @@ const Layout = ({ pageTitle, children }) => {
         <div className="block-3"></div>
         <div className="block-4">
           <Link
-            to="/">
+            to="/"
+            className="home-button"
+            >
             <HomeIcon />
           </Link>
           

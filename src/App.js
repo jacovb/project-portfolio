@@ -8,9 +8,31 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Layout pageTitle="Header">
-          <div>content for Layout</div>
-        </Layout>
+        <Switch>
+          <Route exact path="/">
+            <Layout pageTitle="Home">
+              <div>HomePage Content</div>
+            </Layout>
+          </Route>
+
+          <Route exact path="/about">
+            <Layout pageTitle="About">
+              <div>About Content</div>
+            </Layout>
+          </Route>
+
+          <Route exact path="/portfolio">
+            <Layout pageTitle="Portfolio">
+              <div>Portfolio Content</div>
+            </Layout>
+          </Route>
+
+          <Route exact path="/contact">
+            <Layout pageTitle="Contact">
+              <div>Contact Content</div>
+            </Layout>
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
