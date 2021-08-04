@@ -42,10 +42,11 @@ const Layout = ({ pageTitle, children }) => {
           </Link>
           
         </div>
-        <div className="block-5"></div>
+        <div className="block-5">
+          <h1>{pageTitle}</h1>
+        </div>
         <div className="block-6"></div>
       </div>
-          <h1>{pageTitle}</h1>
           {children}
     </main>
   )
