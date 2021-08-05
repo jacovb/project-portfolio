@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Collapse = ({title, activeTab, setActiveTab}) => {
+
+  const parentRef = useRef();
+
+  function handleCollapseToggle() {
+    if(activeTab === title) {
+      setActiveTab("");
+    } else {
+      setActiveTab(title)
+    }
+  }
+
   return (
     <div className="collapse">
       <div className="collapse-heading">
         <div className="collapse-heading-container">
           <p>{title}</p>
-          <span onClick={() => setActiveTab(title)}>
+          <span onClick={handleCollapseToggle}>
             {activeTab === title ? "-" : "+"}
           </span>
         </div>
       </div>
 
-      <div className={(activeTab === title ? "show" : "" ) + " collapse-content"}>
+      <div 
+        className="collapse-content" 
+        ref={parentRef}
+        style={(activeTab === title) ? {
+            height: parentRef.current.scrollHeight + "px",
+            opacity: "1",
+          } : {
+            height: "0px",
+            opacity: "0",
+          }} 
+        >
         <div className="collapse-content-container">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

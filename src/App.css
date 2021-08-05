@@ -114,12 +114,6 @@
   transition: all 0.3s ease;
 }
 
-.collapse-content-container {
-  width: 100%;
-  max-width: 480px;
-  margin: auto;
-}
-
 .collapse {
   width: 100%;
   max-width: 540px;
@@ -149,19 +143,14 @@
 
 .collapse-content {
   background: #383a7f;
-  height: 0;
-  opacity: 0;
   display: flex;
   overflow: hidden;
+  height: 0px;
   transition: all 600ms ease-in-out;
 }
 
-.collapse-content.show {
-  height: 180px;
-  opacity: 1;
-}
-
-.collapse-content p {
-  font-size: 15px;
-  line-height: 1.6;
+.collapse-content-container {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
 }
