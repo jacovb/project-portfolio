@@ -15,9 +15,9 @@ const Collapse = ({title, activeTab, setActiveTab}) => {
   return (
     <div className="collapse">
       <div className="collapse-heading">
-        <div className="collapse-heading-container">
+        <div className="collapse-heading-container" onClick={handleCollapseToggle}>
           <p>{title}</p>
-          <span onClick={handleCollapseToggle}>
+          <span>
             {activeTab === title ? "-" : "+"}
           </span>
         </div>
