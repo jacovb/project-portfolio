@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-const Collapse = ({title, activeTab, setActiveTab}) => {
+const Collapse = ({title, activeTab, setActiveTab, children}) => {
 
   const parentRef = useRef();
 
@@ -14,8 +14,8 @@ const Collapse = ({title, activeTab, setActiveTab}) => {
 
   return (
     <div className="collapse">
-      <div className="collapse-heading">
-        <div className="collapse-heading-container" onClick={handleCollapseToggle}>
+      <div className="collapse-heading" onClick={handleCollapseToggle}>
+        <div className="collapse-heading-container">
           <p>{title}</p>
           <span>
             {activeTab === title ? "-" : "+"}
@@ -35,14 +35,15 @@ const Collapse = ({title, activeTab, setActiveTab}) => {
           }} 
         >
         <div className="collapse-content-container">
-          <p>
+          {children}
+          {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

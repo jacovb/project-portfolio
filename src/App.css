@@ -124,12 +124,13 @@
 .collapse-heading {
   background: #3f475d;
   padding: 14px 0;
+  cursor: pointer;
 }
 
-.collapse-heading .container {
+.collapse-heading-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .collapse-heading p {
@@ -137,9 +138,9 @@
   font-weight: 600;
 }
 
-.collapse-heading span {
+/* .collapse-heading span {
   cursor: pointer;
-}
+} */
 
 .collapse-content {
   background: #383a7f;
