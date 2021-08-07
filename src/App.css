@@ -116,13 +116,18 @@
 
 .collapse {
   width: 100%;
-  max-width: 540px;
-  margin: 18px auto;
+  margin: 0.5rem auto;
   color: #fff;
+  transition: all 0.5s ease;
+  border-right: 0.5rem solid black;
+}
+
+.show {
+  width: 600%;
 }
 
 .collapse-heading {
-  background: #3f475d;
+  background: white;
   padding: 14px 0;
   cursor: pointer;
 }
@@ -131,6 +136,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: black;
 }
 
 .collapse-heading p {
@@ -154,4 +160,10 @@
   width: 100%;
   max-width: 480px;
   margin: auto;
+}
+
+.sliders {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
