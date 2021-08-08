@@ -144,15 +144,10 @@
   font-weight: 600;
 }
 
-/* .collapse-heading span {
-  cursor: pointer;
-} */
-
 .collapse-content {
   background: #383a7f;
-  display: flex;
   overflow: hidden;
-  height: 0px;
+  height: 500px;
   transition: all 600ms ease-in-out;
 }
 

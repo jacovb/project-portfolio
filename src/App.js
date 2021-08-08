@@ -23,3 +23,9 @@ function App() {
 }
 
 export default App;
+
+// rework grid of header
+// maybe move header to footer area?
+// rework button to syncronize with tabs.
+// calculate correct widths of tabs to coincide with grid
+// add content.

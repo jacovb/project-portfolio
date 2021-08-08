@@ -1,8 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 const Collapse = ({title, activeTab, setActiveTab, children}) => {
-
-  const parentRef = useRef();
 
   function handleCollapseToggle() {
       setActiveTab(title)
@@ -17,23 +15,20 @@ const Collapse = ({title, activeTab, setActiveTab, children}) => {
       </div>
 
       <div 
-        className="collapse-content" 
-        ref={parentRef}
+        className="collapse-content"
         style={(activeTab === title) ? {
-            height: parentRef.current.scrollHeight + "px",
             opacity: "1",
+            overflow: "scroll",
           } : {
-            height: "0px",
             opacity: "0",
           }} 
         >
+          
         <div 
           className="collapse-content-container"
           style={(activeTab === title) ? {
-            height: parentRef.current.scrollHeight + "px",
             opacity: "1",
           } : {
-            height: "0px",
             opacity: "0",
           }}
         >
