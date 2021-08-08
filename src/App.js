@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Layout from "./components/layout";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("Home");
   const [pageTitle, setPageTitle] = useState("Home");
-
-  useEffect(() => {
-    setActiveTab("Home");
-  }, []);
 
   return (
     <div className="App">

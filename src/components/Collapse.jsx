@@ -8,7 +8,7 @@ const Collapse = ({title, activeTab, setActiveTab, children}) => {
 
   return (
     <div className={(activeTab === title) ? "collapse show" : "collapse"}>
-      <div className="collapse-heading" onClick={handleCollapseToggle}>
+      <div className={(activeTab === title) ? "collapse-heading-show" : "collapse-heading"} onClick={handleCollapseToggle}>
         <div className="collapse-heading-container">
           <p>{title}</p>
         </div>

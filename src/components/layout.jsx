@@ -7,6 +7,7 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab, children }) 
   return (
     <main>
       <title>{pageTitle}</title>
+      <div className="header-container"></div>
       <div className="sliders">
         <Collapse
           title="Home"
@@ -83,7 +84,7 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab, children }) 
           <div>Contact Content</div>
         </Collapse>
       </div>
-      <div className="grid-container header-container">
+      <div className="grid-container footer-container">
         <div className="block-1">
           <button
             className="home-button"

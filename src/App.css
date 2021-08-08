@@ -3,7 +3,14 @@
 }
 
 .header-container {
-  margin: 0.5rem auto;
+  margin: auto;
+  background-color: rgba(17, 24, 39, 1);
+  height: 3rem;
+  width: 100vw;
+}
+
+.footer-container {
+  margin: auto;
   background-color: rgba(17, 24, 39, 1);
   height: calc(2 * (100vh / 12));
   width: 100vw;
@@ -84,12 +91,12 @@
 }
 
 .collapse {
+  background: white;
   width: 10%;
   min-width: 100px;
   margin: auto;
   color: #fff;
   transition: all 0.5s ease;
-  /* border-right: 0.5rem solid black; */
 }
 
 .show {
@@ -97,9 +104,17 @@
 }
 
 .collapse-heading {
-  background: white;
-  padding: 14px 0;
   cursor: pointer;
+  transform-origin: bottom center;
+  margin-right: 3em;
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
+
+.collapse-heading-show {
+  transform: rotate(0deg);
+  font-weight: 600;
+  transition: all 0.5s ease;
 }
 
 .collapse-heading-container {
@@ -115,7 +130,6 @@
 }
 
 .collapse-content {
-  background: #383a7f;
   overflow: hidden;
   height: 500px;
   transition: all 600ms ease-in-out;
@@ -126,6 +140,7 @@
   max-width: 480px;
   margin: auto;
   height: 100%;
+  color: black;
 }
 
 .sliders {
@@ -134,4 +149,5 @@
   justify-content: flex-end;
   gap: 0.5rem;
   background-color: black;
+  padding-bottom: 0.5rem;
 }
