@@ -5,49 +5,8 @@ import Collapse from "./Collapse";
 const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab, children }) => {
   
   return (
-    <main className="header-container">
+    <main>
       <title>{pageTitle}</title>
-      <div className="grid-container">
-        <div className="block-1"></div>
-        <div className="block-2">
-          <nav className="main-navbar">
-            <button
-              className="main-navbar-button"
-              onClick={() => setPageTitle("About")}
-            >
-              About
-            </button>
-
-            <button
-              className="main-navbar-button"
-              onClick={() => setPageTitle("Portfolio")}
-            >
-              Portfolio
-            </button>
-
-            <button
-              className="main-navbar-button"
-              onClick={() => setPageTitle("Contact")}
-            >
-              Contact
-            </button>
-          </nav>
-        </div>
-        <div className="block-3"></div>
-        <div className="block-4">
-          <button
-            className="home-button"
-            onClick={() => setPageTitle("Home")}
-            >
-            <HomeIcon />
-          </button>
-          
-        </div>
-        <div className="block-5">
-          <h1>{pageTitle}</h1>
-        </div>
-        <div className="block-6"></div>
-      </div>
       <div className="sliders">
         <Collapse
           title="Home"
@@ -123,6 +82,41 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab, children }) 
         >
           <div>Contact Content</div>
         </Collapse>
+      </div>
+      <div className="grid-container header-container">
+        <div className="block-1">
+          <button
+            className="home-button"
+            onClick={() => setPageTitle("Home")}
+            >
+            <HomeIcon />
+          </button>
+        </div>
+        <div className="block-2">
+          <nav className="main-navbar">
+            <button
+              className="main-navbar-button"
+              onClick={() => setPageTitle("About")}
+            >
+              About
+            </button>
+
+            <button
+              className="main-navbar-button"
+              onClick={() => setPageTitle("Portfolio")}
+            >
+              Portfolio
+            </button>
+
+            <button
+              className="main-navbar-button"
+              onClick={() => setPageTitle("Contact")}
+            >
+              Contact
+            </button>
+          </nav>
+        </div>
+        <div className="block-3"></div>
       </div>
     </main>
   )

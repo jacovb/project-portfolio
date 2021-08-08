@@ -3,67 +3,36 @@
 }
 
 .header-container {
-  margin: auto;
+  margin: 0.5rem auto;
   background-color: rgba(17, 24, 39, 1);
-  height: calc(3 * (100vh / 12));
+  height: calc(2 * (100vh / 12));
   width: 100vw;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(18, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  height: calc(100% - 0.5rem);
+  grid-template-columns: 20% 50% 30%;
+  height: auto;
   width: 100%;
   gap: 0.5rem;
 }
 
 .block-1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
   grid-column-start: 1;
-  grid-column-end: 3;
-  background-color: white;
+  grid-column-end: 2;
+  background-color: rgba(239, 68, 68, 1);
 }
 
 .block-2 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 13;
+  grid-column-start: 2;
+  grid-column-end: 3;
   background-color: rgba(59, 130, 246, 1);
 }
 
 .block-3 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 13;
-  grid-column-end: 19;
-  background-color: rgba(251, 191, 36, 1);
-}
-
-.block-4 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  background-color: rgba(239, 68, 68, 1);
-}
-
-.block-5 {
-  grid-row-start: 2;
-  grid-row-end: 3;
   grid-column-start: 3;
-  grid-column-end: 11;
-  background-color: white;
-}
-
-.block-6 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 11;
-  grid-column-end: 19;
-  background-color: white;
+  grid-column-end: 4;
+  background-color: rgba(251, 191, 36, 1);
 }
 
 .main-navbar {
@@ -115,15 +84,16 @@
 }
 
 .collapse {
-  width: 100%;
-  margin: 0.5rem auto;
+  width: 10%;
+  min-width: 100px;
+  margin: auto;
   color: #fff;
   transition: all 0.5s ease;
-  border-right: 0.5rem solid black;
+  /* border-right: 0.5rem solid black; */
 }
 
 .show {
-  width: 600%;
+  width: 70%;
 }
 
 .collapse-heading {
@@ -155,10 +125,13 @@
   width: 100%;
   max-width: 480px;
   margin: auto;
+  height: 100%;
 }
 
 .sliders {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 0.5rem;
+  background-color: black;
 }
