@@ -1,18 +1,26 @@
 import React from "react"
 import HomeIcon from '@material-ui/icons/Home';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import Collapse from "./Collapse";
 
-const Layout = ({ setPageTitle, activeTab, setActiveTab}) => {
+const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
   
   return (
     <main>
       <div className="header-container">
         <div className="topblock-1"></div>
-        <div className="topblock-2"></div>
+        <div className="topblock-2">
+          <h3>
+            {pageTitle}
+          </h3>
+        </div>
       </div>
       <div className="sliders">
         <Collapse
-          title="Home"
+          title="home"
+          setPageTitle={setPageTitle}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -20,7 +28,8 @@ const Layout = ({ setPageTitle, activeTab, setActiveTab}) => {
         </Collapse>
 
         <Collapse
-          title="About"
+          title="about"
+          setPageTitle={setPageTitle}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -28,7 +37,8 @@ const Layout = ({ setPageTitle, activeTab, setActiveTab}) => {
         </Collapse>
 
         <Collapse
-          title="Portfolio"
+          title="portfolio"
+          setPageTitle={setPageTitle}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -79,7 +89,8 @@ const Layout = ({ setPageTitle, activeTab, setActiveTab}) => {
         </Collapse>
 
         <Collapse
-          title="Contact"
+          title="contact"
+          setPageTitle={setPageTitle}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -88,21 +99,24 @@ const Layout = ({ setPageTitle, activeTab, setActiveTab}) => {
       </div>
       <div className="grid-container footer-container">
         <div className="block-1">
-          <button
+          {/* <button
             className="home-button"
             onClick={() => setPageTitle("Home")}
             >
             <HomeIcon />
-          </button>
+          </button> */}
         </div>
         <div className="block-2">
-          <nav className="main-navbar">
+          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faLinkedin} />
+          {/* <nav className="main-navbar">
             <button
               className="main-navbar-button"
               onClick={() => setPageTitle("About")}
             >
               About
             </button>
+
 
             <button
               className="main-navbar-button"
@@ -117,7 +131,7 @@ const Layout = ({ setPageTitle, activeTab, setActiveTab}) => {
             >
               Contact
             </button>
-          </nav>
+          </nav> */}
         </div>
         <div className="block-3"></div>
       </div>

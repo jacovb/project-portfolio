@@ -3,8 +3,8 @@ import "./App.css";
 import Layout from "./components/layout";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("Home");
-  const [pageTitle, setPageTitle] = useState("Home");
+  const [activeTab, setActiveTab] = useState("home");
+  const [pageTitle, setPageTitle] = useState("home");
 
   return (
     <div className="App">
