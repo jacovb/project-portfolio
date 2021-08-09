@@ -107,31 +107,16 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
           </button> */}
         </div>
         <div className="block-2">
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faLinkedin} />
-          {/* <nav className="main-navbar">
-            <button
-              className="main-navbar-button"
-              onClick={() => setPageTitle("About")}
-            >
-              About
+          <nav className="main-navbar">
+            <button className="main-navbar-button">
+              <FontAwesomeIcon icon={faGithub} />
             </button>
 
 
-            <button
-              className="main-navbar-button"
-              onClick={() => setPageTitle("Portfolio")}
-            >
-              Portfolio
+            <button className="main-navbar-button">
+              <FontAwesomeIcon icon={faLinkedin} />
             </button>
-
-            <button
-              className="main-navbar-button"
-              onClick={() => setPageTitle("Contact")}
-            >
-              Contact
-            </button>
-          </nav> */}
+          </nav>
         </div>
         <div className="block-3"></div>
       </div>
