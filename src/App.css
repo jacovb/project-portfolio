@@ -100,14 +100,15 @@
   width: calc(10% - 0.5rem);
   color: #fff;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .show {
   width: 70%;
+  cursor: auto;
 }
 
 .collapse-heading {
-  cursor: pointer;
   transform-origin: bottom center;
   margin-right: 3em;
   transform: rotate(90deg);

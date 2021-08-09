@@ -1,14 +1,15 @@
 import React from 'react';
 
 const Collapse = ({title, activeTab, setActiveTab, children}) => {
-
+  
   function handleCollapseToggle() {
       setActiveTab(title)
+      document.title = title
   }
 
   return (
-    <div className={(activeTab === title) ? "collapse show" : "collapse"}>
-      <div className={(activeTab === title) ? "collapse-heading-show" : "collapse-heading"} onClick={handleCollapseToggle}>
+    <div className={(activeTab === title) ? "collapse show" : "collapse"} onClick={handleCollapseToggle}>
+      <div className={(activeTab === title) ? "collapse-heading-show" : "collapse-heading"}>
         <div className="collapse-heading-container">
           <p>{title}</p>
         </div>
