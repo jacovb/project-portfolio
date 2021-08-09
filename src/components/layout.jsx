@@ -7,7 +7,10 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab, children }) 
   return (
     <main>
       <title>{pageTitle}</title>
-      <div className="header-container"></div>
+      <div className="header-container">
+        <div className="topblock-1"></div>
+        <div className="topblock-2"></div>
+      </div>
       <div className="sliders">
         <Collapse
           title="Home"
