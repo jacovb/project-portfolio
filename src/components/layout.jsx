@@ -101,15 +101,15 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
         <div className="block-1"></div>
         <div className="block-2">
           <nav className="main-navbar">
-            <button className="main-navbar-button" onClick={handleLink("https://github.com/jacovb")}>
+            <a href="https://github.com/jacovb" target="_blank" rel="noreferrer noopener" className="main-navbar-button">
               <FontAwesomeIcon icon={faGithub} />
-            </button>
+            </a>
 
-            <button className="main-navbar-button">
+            <a href="https://www.linkedin.com/in/jaco-van-biljon-62b27422/" target="_blank" rel="noreferrer noopener" className="main-navbar-button">
               <FontAwesomeIcon icon={faLinkedin} />
-            </button>
+            </a>
 
-            <button className="main-navbar-button">
+            <button className="main-navbar-button" onClick={() => setActiveTab("contact")}>
               <FontAwesomeIcon icon={faEnvelope} />
             </button>
           </nav>
