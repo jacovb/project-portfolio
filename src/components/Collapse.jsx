@@ -20,8 +20,10 @@ const Collapse = ({title, setPageTitle, activeTab, setActiveTab, children}) => {
         style={(activeTab === title) ? {
             opacity: "1",
             overflow: "scroll",
+            visibility: "visible",
           } : {
             opacity: "0",
+            visibility: "hidden"
           }} 
         >
           

@@ -56,7 +56,7 @@
 
 .main-navbar {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -64,14 +64,14 @@
 
 .main-navbar-button {
   background-color: rgba(147, 197, 253, 1);
-  border: 2px solid black;
+  border: 2px solid rgba(30, 64, 175, 1);
   border-radius: 50%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-size: 30px;
-  color: black;
+  color: rgba(30, 64, 175, 1);
   text-decoration: none;
   text-align: center;
   height: 50px;
@@ -85,25 +85,6 @@
   transition: all 0.3s ease;
 }
 
-.home-button svg {
-  height: 40px;
-  width: 40px;
-  background-color: rgba(252, 165, 165, 1);
-  border: 2px solid rgba(185, 28, 28, 1);
-  border-radius: 50%;
-  color: rgba(185, 28, 28, 1);
-  padding: 0.25rem;
-  margin-top: 12px;
-  margin-bottom: auto;
-}
-
-.home-button svg:hover {
-  border: 2px solid white;
-  color: white;
-  background-color: rgba(185, 28, 28, 1);
-  transition: all 0.3s ease;
-}
-
 .collapse {
   background: white;
   width: calc(10% - 0.5rem);
@@ -112,14 +93,26 @@
   cursor: pointer;
 }
 
+.collapse:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+.collapse:hover .collapse-heading-container {
+  color: white;
+}
+
 .show {
   width: 70%;
   cursor: auto;
 }
 
+.show:hover {
+  background: white;
+}
+
 .collapse-heading {
   transform-origin: bottom center;
-  margin-right: 6em;
+  margin-right: 1.5em;
   transform: rotate(90deg);
   transition: all 0.5s ease;
   font-weight: 700;
@@ -134,14 +127,11 @@
 }
 
 .collapse-heading-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   color: black;
+  transition: all 0.5s ease;
 }
 
 .collapse-heading p {
-  letter-spacing: 1.2px;
   font-weight: 600;
   font-size: 24px;
 }

@@ -1,21 +1,21 @@
 import React from "react"
-import HomeIcon from '@material-ui/icons/Home';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Collapse from "./Collapse";
 
 const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
   
+  function handleLink(link) {
+    window.open(link);
+  }
+
   return (
     <main>
       <div className="header-container">
         <div className="topblock-1"></div>
-        <div className="topblock-2">
-          <h3>
-            {pageTitle}
-          </h3>
-        </div>
+        <div className="topblock-2"></div>
       </div>
       <div className="sliders">
         <Collapse
@@ -98,23 +98,19 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
         </Collapse>
       </div>
       <div className="grid-container footer-container">
-        <div className="block-1">
-          {/* <button
-            className="home-button"
-            onClick={() => setPageTitle("Home")}
-            >
-            <HomeIcon />
-          </button> */}
-        </div>
+        <div className="block-1"></div>
         <div className="block-2">
           <nav className="main-navbar">
-            <button className="main-navbar-button">
+            <button className="main-navbar-button" onClick={handleLink("https://github.com/jacovb")}>
               <FontAwesomeIcon icon={faGithub} />
             </button>
 
-
             <button className="main-navbar-button">
               <FontAwesomeIcon icon={faLinkedin} />
+            </button>
+
+            <button className="main-navbar-button">
+              <FontAwesomeIcon icon={faEnvelope} />
             </button>
           </nav>
         </div>
