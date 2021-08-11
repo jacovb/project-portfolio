@@ -20,22 +20,14 @@ const Collapse = ({title, activeTab, setActiveTab, children}) => {
             opacity: "1",
             overflow: "scroll",
             visibility: "visible",
+            transitionDelay: "0.3s",
           } : {
             opacity: "0",
-            visibility: "hidden"
+            visibility: "hidden",
+            overflow: "hidden",
           }} 
         >
-          
-        <div 
-          className="collapse-content-container"
-          style={(activeTab === title) ? {
-            opacity: "1",
-          } : {
-            opacity: "0",
-          }}
-        >
           {children}
-        </div>
       </div>
     </div>
   )
