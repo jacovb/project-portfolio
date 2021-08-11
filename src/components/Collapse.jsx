@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Collapse = ({title, setPageTitle, activeTab, setActiveTab, children}) => {
+const Collapse = ({title, activeTab, setActiveTab, children}) => {
   
   function handleCollapseToggle() {
       setActiveTab(title)
-      setPageTitle(title)
   }
 
   return (

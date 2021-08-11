@@ -4,13 +4,9 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Collapse from "./Collapse";
+import Name from "./Name";
 
-const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
-  
-  function handleLink(link) {
-    window.open(link);
-  }
-
+const Layout = ({ activeTab, setActiveTab}) => {
   return (
     <main>
       <div className="header-container">
@@ -19,17 +15,15 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
       </div>
       <div className="sliders">
         <Collapse
-          title="home"
-          setPageTitle={setPageTitle}
+          title="HOME"
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
-          <div>Home Content</div>
+          <Name />
         </Collapse>
 
         <Collapse
-          title="about"
-          setPageTitle={setPageTitle}
+          title="ABOUT"
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -37,8 +31,7 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
         </Collapse>
 
         <Collapse
-          title="portfolio"
-          setPageTitle={setPageTitle}
+          title="PORTFOLIO"
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -89,8 +82,7 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
         </Collapse>
 
         <Collapse
-          title="contact"
-          setPageTitle={setPageTitle}
+          title="CONTACT"
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
@@ -109,7 +101,7 @@ const Layout = ({ pageTitle, setPageTitle, activeTab, setActiveTab}) => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
-            <button className="main-navbar-button" onClick={() => setActiveTab("contact")}>
+            <button className="main-navbar-button" onClick={() => setActiveTab("CONTACT")}>
               <FontAwesomeIcon icon={faEnvelope} />
             </button>
           </nav>

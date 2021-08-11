@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("home");
-  const [pageTitle, setPageTitle] = useState("home");
+  const [activeTab, setActiveTab] = useState("HOME");
 
   return (
     <div className="App">
-      <Layout
-        pageTitle={pageTitle}
-        setPageTitle={setPageTitle}
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-      />
+      <Layout activeTab={activeTab} setActiveTab={setActiveTab} />
     </div>
   );
 }
