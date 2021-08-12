@@ -155,4 +155,5 @@
   background-color: black;
   padding-bottom: 0.5rem;
   height: calc(9.5 * (100vh / 12));
+  width: 100vw;
 }
