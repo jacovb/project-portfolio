@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Name = () => {
+export default function Name() {
   return (
     <div>
       <h1 style={{margin: "0 auto 0 auto"}}>JACO VAN BILJON</h1>
@@ -13,5 +13,3 @@ const Name = () => {
     </div>
   )
 }
-
-export default Name;

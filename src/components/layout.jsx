@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Collapse from "./Collapse";
 import Name from "./Name";
+import ContactForm from "./ContactForm";
 
 const Layout = ({ activeTab, setActiveTab}) => {
   return (
@@ -86,7 +87,7 @@ const Layout = ({ activeTab, setActiveTab}) => {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
-          <div>Contact Content</div>
+          <ContactForm />
         </Collapse>
       </div>
       <div className="grid-container footer-container">
