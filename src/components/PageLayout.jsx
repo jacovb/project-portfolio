@@ -113,4 +113,4 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
   )
 }
 
-export default Layout
+export default PageLayout

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-// import Layout from "./components/Layout";
+import PageLayout from "./components/PageLayout";
 import Name from "./components/Name";
 
 function App() {
@@ -8,8 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <Name />
-      {/* <Layout activeTab={activeTab} setActiveTab={setActiveTab} /> */}
+      <PageLayout activeTab={activeTab} setActiveTab={setActiveTab} />
     </div>
   );
 }
