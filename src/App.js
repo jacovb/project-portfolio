@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./App.css";
 import Layout from "./components/Layout";
+import Name from "./components/Name";
 
 function App() {
   const [activeTab, setActiveTab] = useState("HOME");
 
   return (
     <div className="App">
-      <Layout activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Name />
+      {/* <Layout activeTab={activeTab} setActiveTab={setActiveTab} /> */}
     </div>
   );
 }
