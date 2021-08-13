@@ -75,6 +75,7 @@
   text-decoration: none;
   text-align: center;
   width: 50px;
+  height: 34px;
 }
 
 .main-navbar-button:hover {
@@ -156,4 +157,32 @@
   padding-bottom: 0.5rem;
   height: calc(9.5 * (100vh / 12));
   width: 100vw;
+}
+
+form {
+  box-sizing: border-box;
+}
+
+.contact-form {
+  width: 320px;
+  float: left;
+  margin: 20px;
+}
+
+.contact-form > div {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 2px solid gray;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 12px;
+  outline: 0;
 }
