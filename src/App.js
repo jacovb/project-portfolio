@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import PageLayout from "./components/PageLayout";
-import Name from "./components/Name";
 
 function App() {
   const [activeTab, setActiveTab] = useState("HOME");

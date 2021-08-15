@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function ContactForm() {
   return (
-    <form name="contact" method="post" >
+    <form name="contact" method="post" > 
+     {/* form should have classname of contact-form, check structure in codepen */}
       <input type="hidden" name="form-name" value="contact" />
       <div className="contact-form">
         <div>
