@@ -116,6 +116,7 @@
   transform: rotate(90deg);
   transition: all 0.5s ease;
   font-weight: 700;
+  background: green;
 }
 
 .collapse-heading-show {
@@ -185,4 +186,60 @@ form {
   z-index: 1;
   padding: 8px 12px;
   outline: 0;
+}
+
+.contact-form input:valid,
+.contact-form textarea:valid {
+  background: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f06d06;
+}
+
+.contact-form input:focus + label,
+.contact-form textarea:focus + label {
+  background: #f06d06;
+  color: white;
+  font-size: 70%;
+  padding: 1px 6px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.contact-form label {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s,
+    left 0.2s;
+  position: absolute;
+  color: #999;
+  padding: 7px 6px;
+}
+
+.contact-form textarea {
+  display: block;
+  resize: vertical;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 12px 12px 12px;
+}
+
+.contact-form label {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  padding: 4px 6px 20px 6px;
+}
+
+.contact-form input:focus + label,
+.contact-form textarea:focus + label {
+  top: 100%;
+  margin-top: -16px;
 }
