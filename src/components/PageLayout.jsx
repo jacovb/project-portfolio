@@ -93,7 +93,7 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
       <div className="grid-container footer-container">
         <div className="block-1"></div>
         <div className="block-2">
-          <nav className="main-navbar">
+          <nav className="contact-button-navbar">
             <a href="https://github.com/jacovb" target="_blank" rel="noreferrer noopener" className="main-navbar-button">
               <FontAwesomeIcon icon={faGithub} />
             </a>
