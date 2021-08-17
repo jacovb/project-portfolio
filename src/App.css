@@ -116,7 +116,6 @@
   transform: rotate(90deg);
   transition: all 0.5s ease;
   font-weight: 700;
-  background: green;
 }
 
 .collapse-heading-show {
