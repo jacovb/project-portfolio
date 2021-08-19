@@ -1,5 +1,4 @@
-.App {
-  text-align: center;
+* {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -111,7 +110,7 @@
 }
 
 .collapse-heading {
-  transform-origin: bottom center;
+  transform-origin: bottom left;
   margin-right: 1.5em;
   transform: rotate(90deg);
   transition: all 0.5s ease;
@@ -147,6 +146,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .sliders {
@@ -180,7 +180,6 @@
 .input-name,
 .input-email {
   flex-grow: 1;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   padding: 8px;
   background: lightgray;
@@ -193,7 +192,6 @@
   width: calc(100% - 16px);
   height: 200px;
   resize: none;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   padding: 8px;
   background: lightgray;
@@ -231,97 +229,3 @@
   display: flex;
   gap: 0.5rem;
 }
-
-/* * {
-  box-sizing: border-box;
-} */
-
-/* .contact-form {
-  width: 400px;
-  float: left;
-  margin: 20px;
-  text-align: left;
-}
-
-.contact-form > div {
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 3px solid black;
-  background: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  padding: 8px 12px;
-  outline: 0;
-}
-
-.contact-form input {
-  margin-bottom: 5px;
-}
-
-.contact-form textarea {
-  height: 200px;
-}
-
-.contact-form input:valid,
-.contact-form textarea:valid {
-  background: white;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: rgba(239, 68, 68, 1);
-  background: lightgray;
-  transition: all 0.3s ease;
-}
-
-.contact-form input:focus + label,
-.contact-form textarea:focus + label {
-  background: black;
-  color: white;
-  font-size: 70%;
-  padding: 1px 6px;
-  z-index: 2;
-  text-transform: uppercase;
-}
-
-.contact-form label {
-  transition: all 0.3s ease;
-  position: absolute;
-  color: black;
-  padding: 7px 6px;
-}
-
-.contact-form textarea {
-  display: block;
-  resize: vertical;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px 12px 12px 12px;
-}
-
-.contact-form label {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  padding: 4px 6px 20px 6px;
-}
-
-.contact-form input:focus + label,
-.contact-form textarea:focus + label {
-  top: 100%;
-  margin-top: -16px;
-} */

@@ -6,7 +6,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 export default function ContactForm() {
   return (
     <>
-      <h1>Contact</h1>
+      <h1>CONTACT</h1>
       <div className="contact-header-mail">
         <FontAwesomeIcon icon={faEnvelope} />
         <div>vbiljon@gmail.com</div>
