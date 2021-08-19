@@ -143,6 +143,7 @@
   color: black;
   transition: all 0.3s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -171,6 +172,7 @@
 .contact-id {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem;
 }
@@ -183,6 +185,7 @@
   padding: 8px;
   background: lightgray;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .contact-form textarea {
@@ -195,14 +198,38 @@
   padding: 8px;
   background: lightgray;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .contact-send-button {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  padding: 4px 8px;
+  padding: 8px 8px;
   width: 80px;
   margin-top: 0.5rem;
+  border: none;
+  background: rgb(90, 90, 90);
+  color: white;
+  border-radius: 9999px;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.contact-send-button:hover {
+  background: rgba(239, 68, 68, 1);
+  cursor: pointer;
+}
+
+.input-name:focus,
+.input-email:focus,
+.contact-form textarea:focus {
+  background: white;
+  outline: 1px dashed rgba(239, 68, 68, 1);
+}
+
+.contact-header-mail {
+  display: flex;
+  gap: 0.5rem;
 }
 
 /* * {
