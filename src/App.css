@@ -112,7 +112,7 @@
 .collapse-heading {
   transform-origin: bottom left;
   margin-right: 1.5em;
-  transform: rotate(90deg);
+  transform: translateX(46%) rotate(90deg);
   transition: all 0.5s ease;
   font-weight: 700;
 }
@@ -133,6 +133,7 @@
 .collapse-heading p {
   font-weight: 600;
   font-size: 24px;
+  margin: 0;
 }
 
 .collapse-content {
