@@ -163,6 +163,7 @@
 
 .contact-form {
   width: 80%;
+  max-width: 600px;
   margin: 20px;
   text-align: left;
   display: flex;
