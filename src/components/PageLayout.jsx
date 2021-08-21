@@ -60,7 +60,7 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
-            <a className="main-navbar-button" onClick={() => setActiveTab("CONTACT")}>
+            <a href="#top" className="main-navbar-button" onClick={() => setActiveTab("CONTACT")}>
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </nav>
