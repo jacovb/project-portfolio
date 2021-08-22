@@ -268,3 +268,12 @@
   transform: scale(1.4);
   transition: all 0.3s ease;
 }
+
+.tech-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  width: 200px;
+  margin: auto;
+  margin-top: 10px;
+}
