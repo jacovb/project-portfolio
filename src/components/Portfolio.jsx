@@ -10,7 +10,6 @@ import StarWarsApp from '../images/StarWarsApp.gif'
 export default function Portfolio() {
   return (
     <>
-      <h1>PROJECTS</h1>
       <Project 
         name="Punch-Card" 
         gifLink={PunchCard}
@@ -25,6 +24,7 @@ export default function Portfolio() {
         <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
         <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
         <FontAwesomeIcon icon={faAws} style={{color: "#F05340"}}/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="graphql" height="21px" />
       </Project>
 
       <Project

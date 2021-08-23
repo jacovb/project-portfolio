@@ -12,7 +12,7 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
   return (
     <main>
       <div className="header-container">
-        <div className="topblock-1"></div>
+        <div className="topblock-1">{activeTab === "HOME" ? "" : activeTab}</div>
         <div className="topblock-2"></div>
       </div>
       <div className="sliders">
@@ -65,7 +65,10 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
             </a>
           </nav>
         </div>
-        <div className="block-3"></div>
+        <div className="block-3">
+          {/* <FontAwesomeIcon icon={faCopyright} /> */}
+          {activeTab === "HOME" ? "" : "JACO VAN BILJON"}
+        </div>
       </div>
     </main>
   )
