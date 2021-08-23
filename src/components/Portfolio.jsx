@@ -5,6 +5,7 @@ import { faJs, faReact, faAws, faHtml5, faCss3} from "@fortawesome/free-brands-s
 
 import PunchCard from '../images/PunchCard.gif'
 import PaymentCalculator from '../images/PaymentCalculator.gif'
+import StarWarsApp from '../images/StarWarsApp.gif'
 
 export default function Portfolio() {
   return (
@@ -34,6 +35,20 @@ export default function Portfolio() {
             Oustanding Capital Amount"
         demoLink="https://payment-calculator120.netlify.app/"
         codeLink="https://github.com/jacovb/payment-calculator"
+      >
+        <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
+        <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
+        <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
+        <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
+      </Project>
+
+      <Project
+        name="Star Wars App"
+        gifLink={StarWarsApp}
+        description="My introduction to API requests, React Hooks and React Router, 
+            mixed with a bit of fun styling"
+        demoLink="https://star-wars-app200.netlify.app/"
+        codeLink="https://github.com/jacovb/star-wars-app"
       >
         <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
         <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
