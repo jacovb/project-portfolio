@@ -27,7 +27,7 @@ export default function Portfolio() {
       </Project>
 
       <Project
-        name="Payment-Calculator"
+        name="Mortgage Payment Calculator"
         gifLink={PaymentCalculator}
         description="An app that calculates and vizualises Mortgage Payments. 
             See how Interest Rates and Initial Fixed Rate Periods impact your 
