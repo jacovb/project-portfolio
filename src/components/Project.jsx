@@ -5,7 +5,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 export default function Project({name, gifLink, demoLink, codeLink ,description, children}) {
   return (
-    <>
+    <div className="project-card">
       <h3>{name}</h3>
       <img src={gifLink} alt={name} style={{maxWidth: "500px", maxHeight: "500px"}} />
       <div>{description}</div>
@@ -20,6 +20,6 @@ export default function Project({name, gifLink, demoLink, codeLink ,description,
           <div>CODE</div>
         </a>
       </div>
-    </>
+    </div>
   )
 }

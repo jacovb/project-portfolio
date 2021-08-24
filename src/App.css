@@ -155,7 +155,7 @@
   width: 100%;
   margin: auto;
   color: black;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   text-align: center;
 }
 
@@ -180,10 +180,14 @@
   justify-content: center;
 }
 
+.contact-component h2 {
+  margin: 10px auto;
+}
+
 .contact-form {
   width: 80%;
   max-width: 600px;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -248,7 +252,22 @@
 
 .contact-header-mail {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
+}
+
+.project-card {
+  height: calc(100% - 20px);
+  background: black;
+  color: white;
+  /* border-top: 0.25rem solid black; */
+  border-bottom: 1px solid white;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.project-card h3 {
+  margin: 0;
 }
 
 .project-card-buttons {
