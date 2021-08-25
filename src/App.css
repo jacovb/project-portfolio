@@ -1,6 +1,8 @@
 * {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
+  /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .header-container {
@@ -68,22 +70,22 @@
 
 .contact-button-navbar {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .main-navbar-button {
-  background-color: rgba(147, 197, 253, 1);
-  border: 2px solid rgba(30, 64, 175, 1);
+  background-color: rgba(253, 230, 138);
+  border: 2px solid rgba(245, 158, 11);
   border-radius: 50%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-size: 30px;
-  color: rgba(30, 64, 175, 1);
+  color: rgba(245, 158, 11);
   text-decoration: none;
   text-align: center;
   width: 50px;
@@ -92,7 +94,7 @@
 }
 
 .main-navbar-button:hover {
-  background-color: rgba(29, 78, 216, 1);
+  background-color: rgba(245, 158, 11);
   color: white;
   border: 2px solid white;
   transition: all 0.3s ease;
@@ -180,6 +182,11 @@
   justify-content: center;
 }
 
+.name-component h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
 .contact-component h2 {
   margin: 10px auto;
 }
@@ -259,18 +266,30 @@
 .project-slider {
   height: 100%;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   scroll-snap-type: y mandatory;
 }
 
 .project-card {
-  height: calc(100% - 20px);
-  border-bottom: 1px solid white;
+  height: 100%;
   margin-top: 0;
-  padding-top: 20px;
-  scroll-margin: 10px;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: black;
+}
+
+.card-row-1 {
+  display: flex;
+  gap: 0.5rem;
+  background: black;
+}
+
+.card-row-2 {
+  background: white;
+  height: 100%;
 }
 
 .project-card h3 {
@@ -310,10 +329,11 @@
 
 .tech-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 24px;
-  width: 200px;
   margin: auto;
-  margin-top: 10px;
   gap: 0.75rem;
+  background: white;
+  height: 100%;
 }

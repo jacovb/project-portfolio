@@ -51,6 +51,8 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
       <div className="grid-container footer-container">
         <div className="block-1"></div>
         <div className="block-2">
+        </div>
+        <div className="block-3">
           <nav className="contact-button-navbar">
             <a href="https://github.com/jacovb" target="_blank" rel="noreferrer noopener" className="main-navbar-button">
               <FontAwesomeIcon icon={faGithub} />
@@ -64,10 +66,6 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </nav>
-        </div>
-        <div className="block-3">
-          {/* <FontAwesomeIcon icon={faCopyright} /> */}
-          {activeTab === "HOME" ? "" : "JACO VAN BILJON"}
         </div>
       </div>
     </main>
