@@ -9,12 +9,12 @@ import StarWarsApp from '../images/StarWarsApp.gif'
 
 export default function Portfolio() {
   return (
-    <>
+    <div className="project-slider">
       <Project 
         name="Punch-Card" 
         gifLink={PunchCard}
-        description="An app that makes it easier for employees to add, edit and manage their 
-            timesheets and automatically creates reports that can be used by employers for 
+        description="Employees Add, Edit and Manage 
+            timesheet entries and automatically creates reports that can be used by employers for 
             business and resource management"
         demoLink="https://master.d13ledzsxl0qxj.amplifyapp.com/"
         codeLink="https://github.com/jacovb/time-harvest"
@@ -30,7 +30,7 @@ export default function Portfolio() {
       <Project
         name="Mortgage Payment Calculator"
         gifLink={PaymentCalculator}
-        description="An app that calculates and vizualises Mortgage Payments. 
+        description="Calculates and vizualises Mortgage Payments. 
             See how Interest Rates and Initial Fixed Rate Periods impact your 
             Oustanding Capital Amount"
         demoLink="https://payment-calculator120.netlify.app/"
@@ -55,6 +55,6 @@ export default function Portfolio() {
         <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
         <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
       </Project>
-    </>
+    </div>
   )
 }
