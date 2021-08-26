@@ -296,7 +296,34 @@
 .project-image {
   width: calc((5 / 7 * 100%) + 1rem);
   height: 100%;
-  background: white;
+  background: rgb(46, 46, 46);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-title {
+  font-size: 40px;
+}
+
+.project-image img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+
+.project-image:hover img {
+  height: auto;
+  visibility: visible;
+  transform: translateY(0%);
 }
 
 .project-card h3 {

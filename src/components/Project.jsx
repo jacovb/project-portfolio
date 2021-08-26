@@ -9,7 +9,8 @@ export default function Project({name, gifLink, demoLink, codeLink ,description,
       {/* <h3>{name}</h3> */}
       <div className="card-row-1">
         <div className="project-image">
-          <img src={gifLink} alt={name} style={{height: "auto", width: "auto", maxWidth: "100%", maxHeight: "100%"}} className="project-image" />
+          <h1 className="project-title">{name}</h1>
+          <img src={gifLink} alt={name} />
         </div>
         <div className="tech-list">{children}</div>
       </div>
