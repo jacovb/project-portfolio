@@ -3,12 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 
-export default function Project({name, gifLink, demoLink, codeLink ,description, children}) {
+export default function Project({name, gifLink, demoLink, codeLink ,description, projectStyle, children}) {
   return (
     <div className="project-card">
-      {/* <h3>{name}</h3> */}
       <div className="card-row-1">
-        <div className="project-image">
+        <div className={`project-image ${projectStyle}`}>
           <h1 className="project-title">{name}</h1>
           <img src={gifLink} alt={name} />
         </div>

@@ -18,6 +18,7 @@ export default function Portfolio() {
             business and resource management"
         demoLink="https://master.d13ledzsxl0qxj.amplifyapp.com/"
         codeLink="https://github.com/jacovb/time-harvest"
+        projectStyle="punch-card-styles"
       >
         <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
         <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
@@ -35,6 +36,7 @@ export default function Portfolio() {
             Oustanding Capital Amount"
         demoLink="https://payment-calculator120.netlify.app/"
         codeLink="https://github.com/jacovb/payment-calculator"
+        projectStyle="calculator-styles"
       >
         <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
         <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
@@ -49,6 +51,7 @@ export default function Portfolio() {
             mixed with a bit of fun styling"
         demoLink="https://star-wars-app200.netlify.app/"
         codeLink="https://github.com/jacovb/star-wars-app"
+        projectStyle="star-wars-styles"
       >
         <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
         <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
