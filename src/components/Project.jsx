@@ -11,19 +11,21 @@ export default function Project({name, gifLink, demoLink, codeLink ,description,
           <h1 className="project-title">{name}</h1>
           <img src={gifLink} alt={name} />
         </div>
-        <div className="tech-list">{children}</div>
+        <div className="tech-list">
+          {children}
+          <div className="project-card-buttons">
+            <a href={demoLink} target="_blank" rel="noreferrer noopener" className="project-button demo-button">
+              <FontAwesomeIcon icon={faEye} />
+              <div>DEMO</div>
+            </a>
+            <a href={codeLink} target="_blank" rel="noreferrer noopener" className="project-button code-button">
+              <FontAwesomeIcon icon={faGithub} />
+              <div>CODE</div>
+            </a>
+          </div>
+        </div>
       </div>
       <div className="card-row-2">{description}</div>
-      {/* <div className="project-card-buttons">
-        <a href={demoLink} target="_blank" rel="noreferrer noopener" className="project-button demo-button">
-          <FontAwesomeIcon icon={faEye} />
-          <div>DEMO</div>
-        </a>
-        <a href={codeLink} target="_blank" rel="noreferrer noopener" className="project-button code-button">
-          <FontAwesomeIcon icon={faGithub} />
-          <div>CODE</div>
-        </a>
-      </div> */}
     </div>
   )
 }
