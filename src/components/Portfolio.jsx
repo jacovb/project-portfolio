@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectIndex from './ProjectIndex';
 import Project from './Project';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs, faReact, faAws, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
@@ -10,6 +11,7 @@ import StarWarsApp from '../images/StarWarsApp.gif'
 export default function Portfolio() {
   return (
     <div className="project-slider">
+      <ProjectIndex />
       <Project 
         name="Punch-Card" 
         gifLink={PunchCard}
