@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectIndex from './ProjectIndex';
 import Project from './Project';
+import Tooltip from './Tooltip';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs, faReact, faAws, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
 
@@ -22,12 +24,12 @@ export default function Portfolio() {
         codeLink="https://github.com/jacovb/time-harvest"
         projectStyle="punch-card-styles"
       >
-        <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
+        <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
         <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
         <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
         <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
         <FontAwesomeIcon icon={faAws} style={{color: "#F05340"}}/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="graphql" height="21px" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="graphql" height="35px" />
       </Project>
 
       <Project
