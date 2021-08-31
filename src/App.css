@@ -379,7 +379,7 @@ input {
 }
 
 .project-link:hover svg {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
   color: white;
   transition: all 0.3s ease;
 }
@@ -411,10 +411,11 @@ input {
 
 .arrow-down svg {
   font-size: 30px;
+  color: black;
 }
 
 .arrow-down:hover .bounce {
-  animation: bounce 1s;
+  animation: bounce 2s;
 }
 
 @keyframes bounce {

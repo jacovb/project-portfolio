@@ -23,6 +23,7 @@ export default function Portfolio() {
         demoLink="https://master.d13ledzsxl0qxj.amplifyapp.com/"
         codeLink="https://github.com/jacovb/time-harvest"
         projectStyle="punch-card-styles"
+        next="#calculator-styles"
       >
         <Tooltip title="HTML">
           <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
@@ -53,6 +54,7 @@ export default function Portfolio() {
         demoLink="https://payment-calculator120.netlify.app/"
         codeLink="https://github.com/jacovb/payment-calculator"
         projectStyle="calculator-styles"
+        next="#star-wars-styles"
       >
         <Tooltip title="HTML">
           <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
@@ -76,6 +78,7 @@ export default function Portfolio() {
         demoLink="https://star-wars-app200.netlify.app/"
         codeLink="https://github.com/jacovb/star-wars-app"
         projectStyle="star-wars-styles"
+        next=""
       >
         <Tooltip title="HTML">
           <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />

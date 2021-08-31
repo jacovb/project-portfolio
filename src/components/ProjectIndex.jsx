@@ -19,9 +19,11 @@ export default function ProjectIndex() {
         </div>
       </div>
       <div className="index-column-2">
-        <div className="arrow-down margin-bottom-35">
-          <FontAwesomeIcon icon={faArrowDown} className="bounce"/>
-        </div>
+        <a href="#punch-card-styles">
+          <div className="arrow-down margin-bottom-35">
+            <FontAwesomeIcon icon={faArrowDown} className="bounce"/>
+          </div>
+        </a>
       </div>
     </div>
   )
