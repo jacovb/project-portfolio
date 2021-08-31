@@ -24,12 +24,24 @@ export default function Portfolio() {
         codeLink="https://github.com/jacovb/time-harvest"
         projectStyle="punch-card-styles"
       >
-        <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
-        <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
-        <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
-        <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
-        <FontAwesomeIcon icon={faAws} style={{color: "#F05340"}}/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="graphql" height="35px" />
+        <Tooltip title="HTML">
+          <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
+        </Tooltip>
+        <Tooltip title="CSS">
+          <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
+        </Tooltip>
+        <Tooltip title="Javascript">
+          <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
+        </Tooltip>
+        <Tooltip title="React">
+          <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
+        </Tooltip>
+        <Tooltip title="AWS">
+          <FontAwesomeIcon icon={faAws} style={{color: "#F05340"}}/>
+        </Tooltip>
+        <Tooltip title="GraphQL">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="graphql" height="35px" />
+        </Tooltip>
       </Project>
 
       <Project
@@ -42,10 +54,18 @@ export default function Portfolio() {
         codeLink="https://github.com/jacovb/payment-calculator"
         projectStyle="calculator-styles"
       >
-        <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
-        <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
-        <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
-        <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
+        <Tooltip title="HTML">
+          <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
+        </Tooltip>
+        <Tooltip title="CSS">
+          <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
+        </Tooltip>
+        <Tooltip title="Javascript">
+          <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
+        </Tooltip>
+        <Tooltip title="React">
+          <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
+        </Tooltip>
       </Project>
 
       <Project
@@ -57,10 +77,18 @@ export default function Portfolio() {
         codeLink="https://github.com/jacovb/star-wars-app"
         projectStyle="star-wars-styles"
       >
-        <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}}/>
-        <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
-        <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
-        <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
+        <Tooltip title="HTML">
+          <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
+        </Tooltip>
+        <Tooltip title="CSS">
+          <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}}/>
+        </Tooltip>
+        <Tooltip title="Javascript">
+          <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}}/>
+        </Tooltip>
+        <Tooltip title="React">
+          <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}}/>
+        </Tooltip>
       </Project>
     </div>
   )

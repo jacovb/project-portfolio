@@ -339,12 +339,33 @@ input {
 .project-list-box a {
   text-decoration: none;
   color: black;
-  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .project-list-box svg {
   font-size: 35px;
   color: grey;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 60px;
+}
+
+.project-link:hover {
+  background: rgba(239, 68, 68, 1);
+  border-radius: 9999px;
+  width: 100%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover svg {
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .index-column-2 {
@@ -470,7 +491,7 @@ input {
   width: calc(2 / 7 * 100%);
 }
 
-/* .tooltip-container {
+.tooltip-container {
   position: relative;
 }
 
@@ -478,7 +499,7 @@ input {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
-  padding: 10px;
+  padding: 6px;
   left: calc(100% + 15px);
   display: none;
   z-index: 9999;
@@ -487,4 +508,4 @@ input {
 .tooltip-box.visible {
   display: block;
   font-size: 16px;
-} */
+}

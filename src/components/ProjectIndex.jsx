@@ -12,9 +12,9 @@ export default function ProjectIndex() {
         </div>
         <div className="index-project-list">
           <div className="project-list-box">
-            <a href="#punch-card-styles"><FontAwesomeIcon icon={faStopwatch}/> Punch-Card</a>
-            <a href="#calculator-styles"><FontAwesomeIcon icon={faCalculator}/> Mortgage Payment Calculator</a>
-            <a href="#star-wars-styles"><FontAwesomeIcon icon={faRocket}/> Star Wars App</a>
+            <a href="#punch-card-styles" className="project-link"><FontAwesomeIcon icon={faStopwatch}/> Punch-Card</a>
+            <a href="#calculator-styles" className="project-link"><FontAwesomeIcon icon={faCalculator}/> Mortgage Payment Calculator</a>
+            <a href="#star-wars-styles" className="project-link"><FontAwesomeIcon icon={faRocket}/> Star Wars App</a>
           </div>
         </div>
       </div>
