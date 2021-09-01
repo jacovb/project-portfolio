@@ -13,8 +13,8 @@
 }
 
 .contact-section {
-  background: white;
-  width: calc((6 / 7 * 100%) + 1.25rem);
+  background: black;
+  width: calc((5 / 7 * 100%) + 1.25rem);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -23,20 +23,30 @@
   gap: 0.5rem;
 }
 
+.contact-section-head {
+  background: white;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-infill-section {
   background: white;
   height: 100%;
-  width: calc(1 / 7 * 100%);
+  width: calc(2 / 7 * 100%);
 }
 
 .contact-form {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 20px 20px 20px;
+  width: 100%;
+  height: 65%;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  gap: 0.5rem;
 }
 
 .contact-id {
@@ -51,6 +61,7 @@
 .input-email {
   flex-grow: 1;
   font-size: 16px;
+  height: auto;
   padding: 8px;
   background: lightgray;
   border: none;
@@ -58,9 +69,8 @@
 }
 
 .contact-form textarea {
-  margin-top: 0.5rem;
   width: calc(100% - 16px);
-  height: 200px;
+  height: 100%;
   resize: none;
   font-size: 16px;
   padding: 8px;
@@ -69,16 +79,33 @@
   transition: all 0.3s ease;
 }
 
+.contact-button-ribbon {
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.contact-button-infill {
+  width: 80%;
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    white 0.5rem,
+    black 0.5rem,
+    black 1rem
+  );
+}
+
 .contact-send-button {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   padding: 8px 8px;
-  width: 80px;
-  margin-top: 0.5rem;
+  width: 20%;
   border: none;
   background: rgb(90, 90, 90);
   color: white;
-  border-radius: 9999px;
   align-self: center;
   transition: all 0.3s ease;
 }
@@ -92,7 +119,7 @@
 .input-email:focus,
 .contact-form textarea:focus {
   background: white;
-  outline: 1px dashed rgba(239, 68, 68, 1);
+  outline: none;
 }
 
 .contact-header-mail {
