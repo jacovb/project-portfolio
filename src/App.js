@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./App.css";
-import "./Contact.css";
-import "./Portfolio.css";
-import "./Tooltip.css";
+import "./styles/App.css";
+import "./styles/Contact.css";
+import "./styles/Portfolio.css";
+import "./styles/Tooltip.css";
 import PageLayout from "./components/PageLayout";
 
 function App() {
