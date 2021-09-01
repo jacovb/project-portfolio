@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
+import "./Contact.css";
+import "./Portfolio.css";
+import "./Tooltip.css";
 import PageLayout from "./components/PageLayout";
 
 function App() {
