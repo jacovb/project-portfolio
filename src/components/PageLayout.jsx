@@ -6,8 +6,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Collapse from "./Collapse";
 import Name from "./Name";
-import ContactForm from "./ContactForm";
+import About from "./About";
 import Portfolio from "./Portfolio";
+import ContactForm from "./ContactForm";
 
 const PageLayout = ({ activeTab, setActiveTab}) => {
   return (
@@ -30,7 +31,7 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
-          <div>About Content</div>
+          <About />
         </Collapse>
 
         <Collapse
