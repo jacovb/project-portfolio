@@ -6,6 +6,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 export default function ContactForm() {
   return (
     <div className="contact-component">
+      <div className="contact-infill-section"></div>
       <div className="contact-section">
         <div className="contact-section-head">
           <h1>Get in Touch:</h1>
