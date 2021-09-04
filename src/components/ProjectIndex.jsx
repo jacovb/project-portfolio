@@ -19,7 +19,7 @@ export default function ProjectIndex() {
         </div>
       </div>
       <div className="index-column-2">
-        <a href="#punch-card-styles">
+        <a href="#punch-card">
           <div className="arrow-down margin-bottom-35">
             <FontAwesomeIcon icon={faArrowDown} className="bounce"/>
           </div>
