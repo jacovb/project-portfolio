@@ -11,9 +11,16 @@ import PaymentCalculator from '../images/PaymentCalculator.gif'
 import StarWarsApp from '../images/StarWarsApp.gif'
 
 export default function Portfolio() {
+
+  function handleScroll(e) {
+    console.log("clientHeight:", e.target.clientHeight);
+    console.log("scrollHeight:", e.target.scrollHeight);
+    console.log("scrollTop:", e.target.scrollTop)
+  }
+
   return (
     <div className="portfolio-container">
-      <div className="project-slider">
+      <div className="project-slider" onScroll={handleScroll}>
         <ProjectIndex />
         <Project 
           name="Punch-Card" 
