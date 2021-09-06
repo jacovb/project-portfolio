@@ -24,6 +24,16 @@
   background: rgb(63, 63, 63);
   height: 100%;
   width: calc((1 / 7 * 100%) - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-dot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-slider::-webkit-scrollbar {

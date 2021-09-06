@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectIndex from './ProjectIndex';
 import Project from './Project';
 import Tooltip from './Tooltip';
+import ProjectScrollDots from './ProjectScrollDots';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs, faReact, faAws, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
@@ -11,12 +12,32 @@ import PaymentCalculator from '../images/PaymentCalculator.gif'
 import StarWarsApp from '../images/StarWarsApp.gif'
 
 export default function Portfolio() {
+  const [portPage, setPortPage] = useState("page1");
 
   function handleScroll(e) {
-    console.log("clientHeight:", e.target.clientHeight);
-    console.log("scrollHeight:", e.target.scrollHeight);
-    console.log("scrollTop:", e.target.scrollTop)
+    let tempPage = Math.round((e.target.scrollTop + e.target.clientHeight) / e.target.scrollHeight * 4);
+    if (tempPage <= 1) {
+      if (portPage !== "page1") {
+        setPortPage("page1");
+      }
+    } else if (tempPage <= 2) {
+      if (portPage !== "page2") {
+        setPortPage("page2")
+      }
+    } else if (tempPage <= 3) {
+      if (portPage !== "page3") {
+        setPortPage("page3")
+      }
+    } else if (tempPage <= 4) {
+      if (portPage !== "page4") {
+        setPortPage("page4")
+      }
+    } 
   }
+
+  useEffect(() => {
+    console.log(portPage)
+  }, [portPage])
 
   return (
     <div className="portfolio-container">
@@ -102,7 +123,14 @@ export default function Portfolio() {
           </Tooltip>
         </Project>
       </div>
-      <div className="portfolio-scroll-bar"></div>
+      <div className="portfolio-scroll-bar">
+        <div className="scroll-dot-container">
+          <ProjectScrollDots pageTitle="page1" portPage={portPage} setPortPage={setPortPage} />
+          <ProjectScrollDots pageTitle="page2" portPage={portPage} setPortPage={setPortPage} />
+          <ProjectScrollDots pageTitle="page3" portPage={portPage} setPortPage={setPortPage} />
+          <ProjectScrollDots pageTitle="page4" portPage={portPage} setPortPage={setPortPage} />
+        </div>
+      </div>
     </div>
   )
 }
