@@ -1,15 +1,14 @@
 import React from 'react';
+import ScrollDot from './ScrollDot';
 
-const ProjectScrollDots = ({pageTitle, portPage, setPortPage}) => {
-  
-  function handlePageToggle() {
-    setPortPage(pageTitle)
-  }
-  
+const ProjectScrollDots = ({portPage, setPortPage}) => {
   return (
-    <div>
-      <div style={(pageTitle === portPage) ? {color: "red"} : {color: "yellow"}}>{pageTitle}</div>
-    </div>
+    <>
+      <ScrollDot pageTitle="page1" pageLink="#project-index" portPage={portPage} setPortPage={setPortPage} />
+      <ScrollDot pageTitle="page2" pageLink="#punch-card" portPage={portPage} setPortPage={setPortPage} />
+      <ScrollDot pageTitle="page3" pageLink="#calculator" portPage={portPage} setPortPage={setPortPage} />
+      <ScrollDot pageTitle="page4" pageLink="#star-wars" portPage={portPage} setPortPage={setPortPage} />
+    </>
   )
 }
 

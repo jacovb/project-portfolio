@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
-export default function Project({name, gifLink, demoLink, codeLink ,description, projectStyle, next, children}) {
+export default function Project({name, gifLink, demoLink, codeLink ,description, projectStyle, children}) {
   return (
     <div className="project-card" id={projectStyle}>
       <div className="card-row-1">
@@ -29,13 +29,6 @@ export default function Project({name, gifLink, demoLink, codeLink ,description,
       </div>
       <div className="card-row-2">
         <div className="project-card-description">{description}</div>
-        {next && <div className="card-row-2-arrow">
-          <a href={next}>
-            <div className="arrow-down">
-              <FontAwesomeIcon icon={faArrowDown} className="bounce"/>
-            </div>
-          </a>
-        </div>}
       </div>
     </div>
   )

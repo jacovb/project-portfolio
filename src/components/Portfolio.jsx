@@ -52,7 +52,6 @@ export default function Portfolio() {
           demoLink="https://master.d13ledzsxl0qxj.amplifyapp.com/"
           codeLink="https://github.com/jacovb/time-harvest"
           projectStyle="punch-card"
-          next="#calculator"
         >
           <Tooltip title="HTML">
             <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
@@ -83,7 +82,6 @@ export default function Portfolio() {
           demoLink="https://payment-calculator120.netlify.app/"
           codeLink="https://github.com/jacovb/payment-calculator"
           projectStyle="calculator"
-          next="#star-wars"
         >
           <Tooltip title="HTML">
             <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
@@ -107,7 +105,6 @@ export default function Portfolio() {
           demoLink="https://star-wars-app200.netlify.app/"
           codeLink="https://github.com/jacovb/star-wars-app"
           projectStyle="star-wars"
-          next=""
         >
           <Tooltip title="HTML">
             <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} />
@@ -125,10 +122,7 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-scroll-bar">
         <div className="scroll-dot-container">
-          <ProjectScrollDots pageTitle="page1" portPage={portPage} setPortPage={setPortPage} />
-          <ProjectScrollDots pageTitle="page2" portPage={portPage} setPortPage={setPortPage} />
-          <ProjectScrollDots pageTitle="page3" portPage={portPage} setPortPage={setPortPage} />
-          <ProjectScrollDots pageTitle="page4" portPage={portPage} setPortPage={setPortPage} />
+          <ProjectScrollDots portPage={portPage} setPortPage={setPortPage} />
         </div>
       </div>
     </div>
