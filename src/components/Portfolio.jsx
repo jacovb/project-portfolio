@@ -46,9 +46,11 @@ export default function Portfolio() {
         <Project 
           name="Punch-Card" 
           gifLink={PunchCard}
-          description="Employees Add, Edit and Manage 
-              timesheet entries and automatically creates reports that can be used by employers for 
+          par1="Employees Add, Edit and Manage 
+              timesheet entries and app automatically creates reports that can be used by employers for 
               business and resource management"
+          par2="Using AWS Cognito for Authorization and AWS Dynamo with GraphQL to access the database (CRUD), 
+              employees are able to update this information from any device"
           demoLink="https://master.d13ledzsxl0qxj.amplifyapp.com/"
           codeLink="https://github.com/jacovb/time-harvest"
           projectStyle="punch-card"
@@ -76,9 +78,11 @@ export default function Portfolio() {
         <Project
           name="Mortgage Payment Calculator"
           gifLink={PaymentCalculator}
-          description="Calculates and vizualises Mortgage Payments. 
+          par1="Calculates and vizualises Mortgage Payments. 
               See how Interest Rates and Initial Fixed Rate Periods impact your 
               Oustanding Capital Amount"
+          par2="This was my first project using React with Class components - 
+              a big move from tutorial purgatory"
           demoLink="https://payment-calculator120.netlify.app/"
           codeLink="https://github.com/jacovb/payment-calculator"
           projectStyle="calculator"
@@ -100,7 +104,9 @@ export default function Portfolio() {
         <Project
           name="Star Wars App"
           gifLink={StarWarsApp}
-          description="My introduction to API requests, React Hooks and React Router, 
+          par1="A library with information about Star Wars characters, planets, 
+              starships etc."
+          par2="This was my introduction to API requests, React Hooks and React Router, 
               mixed with a bit of fun styling"
           demoLink="https://star-wars-app200.netlify.app/"
           codeLink="https://github.com/jacovb/star-wars-app"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStopwatch, faCalculator, faRocket, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faStopwatch, faCalculator, faRocket } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectIndex() {
 
@@ -18,7 +18,6 @@ export default function ProjectIndex() {
           </div>
         </div>
       </div>
-      <div className="index-column-2"></div>
     </div>
   )
 }

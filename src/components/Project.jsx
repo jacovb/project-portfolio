@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEye, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
-export default function Project({name, gifLink, demoLink, codeLink ,description, projectStyle, children}) {
+export default function Project({name, gifLink, demoLink, codeLink , par1, par2, projectStyle, children}) {
   return (
     <div className="project-card" id={projectStyle}>
       <div className="card-row-1">
@@ -28,7 +28,14 @@ export default function Project({name, gifLink, demoLink, codeLink ,description,
         </div>
       </div>
       <div className="card-row-2">
-        <div className="project-card-description">{description}</div>
+        <div className="project-card-description">
+          <p>
+            {par1}
+          </p>
+          <p>
+            {par2}
+          </p>
+        </div>
       </div>
     </div>
   )
