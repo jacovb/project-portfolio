@@ -178,7 +178,7 @@ input {
 }
 
 .name-component {
-  background-image: url("../images/IMG_4100.png");
+  background-image: url("../images/IMG_4104.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -187,9 +187,96 @@ input {
   align-items: center;
   justify-content: center;
   color: white;
+  position: relative;
+}
+
+.name-background-fade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  animation: fadeBackground linear 3s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeBackground {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .name-component h1 {
   font-size: 40px;
   font-weight: 800;
+  margin: 15px auto 0 auto;
+}
+
+.home-text {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  animation: textBlackToWhite linear 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textBlackToWhite {
+  0% {
+    color: black;
+  }
+  66% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.home-text-sub {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  margin: 0 auto 0 auto;
+}
+
+.home-line {
+  height: 2px;
+  background: black;
+  position: absolute;
+  animation: lineGrow linear 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.topline {
+  left: 0;
+}
+
+.bottomline {
+  right: 0;
+}
+
+@keyframes lineGrow {
+  0% {
+    width: 0px;
+    background: black;
+  }
+  25% {
+    width: 380px;
+    background: black;
+  }
+  75% {
+    width: 380px;
+    background: black;
+  }
+  100% {
+    width: 380px;
+    background: white;
+  }
 }
