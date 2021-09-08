@@ -178,12 +178,15 @@ input {
 }
 
 .name-component {
+  background-image: url("../images/IMG_4100.png");
+  background-size: cover;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .name-component h1 {
