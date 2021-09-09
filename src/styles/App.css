@@ -178,7 +178,7 @@ input {
 }
 
 .name-component {
-  background-image: url("../images/IMG_4104.png");
+  background-image: url("../images/IMG_4090.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -231,9 +231,11 @@ input {
   }
   66% {
     color: black;
+    filter: none;
   }
   100% {
     color: white;
+    filter: drop-shadow(0 3px 15px black);
   }
 }
 
@@ -274,9 +276,11 @@ input {
   75% {
     width: 380px;
     background: black;
+    filter: none;
   }
   100% {
     width: 380px;
     background: white;
+    filter: drop-shadow(0 3px 15px black);
   }
 }

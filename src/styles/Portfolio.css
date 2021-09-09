@@ -50,7 +50,7 @@
   width: 28px;
   background: white;
   border-radius: 50%;
-  border: 0.25rem solid black;
+  border: 3px solid black;
 }
 
 .port-non-active-page {
@@ -136,7 +136,7 @@
 
 .project-list-box svg {
   font-size: 32px;
-  color: grey;
+  color: rgb(48, 48, 48);
   transition: all 0.3s ease;
 }
 
@@ -150,6 +150,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 10px 3px #ccc;
 }
 
 .project-link {
@@ -157,10 +158,11 @@
   align-items: center;
   gap: 0.5rem;
   height: 70px;
+  font-size: 24px;
 }
 
 .project-link:hover {
-  color: rgba(239, 68, 68);
+  color: rgba(185, 28, 28);
 }
 
 .project-link:hover .index-icon-container {
@@ -193,6 +195,7 @@
 .project-card-description p {
   width: calc(50% - 10px);
   margin: 10px;
+  font-size: 17px;
 }
 
 .card-row-2-arrow {
@@ -250,6 +253,7 @@
   visibility: hidden;
   transform: translateY(100%);
   transition: all 0.5s ease;
+  transition-delay: 1s;
 }
 
 .project-image:hover img {
@@ -260,6 +264,7 @@
 
 .project-image:hover .project-title {
   visibility: hidden;
+  transition-delay: 1s;
 }
 
 .project-card h3 {

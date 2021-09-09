@@ -11,11 +11,20 @@ export default function ContactForm() {
         <div className="contact-section-head">
           <h1>Get in Touch:</h1>
           <div className="contact-header-mail">
-            <FontAwesomeIcon icon={faEnvelope} />
-            <div>vbiljon@gmail.com</div>
+            <div className="contact-item">
+              <div className="contact-icon-container">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </div>
+              <div>vbiljon@gmail.com</div>
+            </div>
 
-            <FontAwesomeIcon icon={faPhone} />
-            <div>0747 007 4039</div>
+            <div className="contact-item">
+              <div className="contact-icon-container">
+                <FontAwesomeIcon icon={faPhone} />
+              </div>
+              <div>0747 007 4039</div>
+            </div>
+
           </div>
 
           <h2>or</h2>

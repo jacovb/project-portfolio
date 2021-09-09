@@ -126,5 +126,28 @@
 .contact-header-mail {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contact-icon-container {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon-container svg {
+  color: rgb(48, 48, 48);
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
 }
