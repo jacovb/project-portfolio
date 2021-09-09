@@ -218,6 +218,7 @@ input {
 
 .home-text {
   position: absolute;
+  width: auto;
   z-index: 1;
   color: black;
   animation: textBlackToWhite linear 3s;
@@ -266,15 +267,15 @@ input {
 
 @keyframes lineGrow {
   0% {
-    width: 0px;
+    width: 0%;
     background: black;
   }
   25% {
-    width: 380px;
+    width: 100%;
     background: black;
   }
   75% {
-    width: 380px;
+    width: 100%;
     background: black;
     filter: none;
   }
