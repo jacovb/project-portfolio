@@ -280,7 +280,7 @@ input {
     filter: none;
   }
   100% {
-    width: 380px;
+    width: 100%;
     background: white;
     filter: drop-shadow(0 3px 15px black);
   }
