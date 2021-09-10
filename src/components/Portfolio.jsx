@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ProjectIndex from './ProjectIndex';
 import Project from './Project';
 import Tooltip from './Tooltip';
@@ -34,10 +34,6 @@ export default function Portfolio() {
       }
     } 
   }
-
-  useEffect(() => {
-    console.log(portPage)
-  }, [portPage])
 
   return (
     <div className="portfolio-container">

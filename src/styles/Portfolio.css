@@ -21,7 +21,7 @@
 }
 
 .portfolio-scroll-bar {
-  background: rgb(63, 63, 63);
+  background: rgb(75, 75, 75);
   height: 100%;
   width: calc((1 / 7 * 100%) - 1rem);
   display: flex;
@@ -51,6 +51,7 @@
   background: white;
   border-radius: 50%;
   border: 3px solid black;
+  box-shadow: 0 3px 10px rgb(39, 39, 39);
 }
 
 .port-non-active-page {
