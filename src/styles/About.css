@@ -1,0 +1,17 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(5 / 7 * 100%);
+  justify-content: center;
+  margin-left: calc(1 / 7 * 100%);
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about-container p {
+  font-size: 18px;
+}
+
+.about-container h4 {
+  font-size: 18px;
+}

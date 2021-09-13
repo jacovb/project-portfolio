@@ -3,6 +3,7 @@ import "./styles/App.css";
 import "./styles/Contact.css";
 import "./styles/Portfolio.css";
 import "./styles/Tooltip.css";
+import "./styles/About.css";
 import PageLayout from "./components/PageLayout";
 
 function App() {
