@@ -4,35 +4,48 @@ export default function About() {
   return (
     <>
       <div className="about-container">
+        
+        <h1>
+          From Architecture to Software Development
+        </h1>
+        
         <h4>
-          With a background in Architecture, these are my top 3 transferable skills:
+          With my background in Design and Architecture, these are my top 3 transferable 
+          skills as a self-taught Front-End Developer:
         </h4>
 
         <h2>
-          I like to problem-solve
+          I like to solve problems
         </h2>
         <p>
-          With building design, there’s constantly problems that need to be solved: 
-          How to improve the layout of a room to enhance the function of the building / space. 
-          How can facades be arranged / shaped to improve the light quality and 
-          building climate inside. Ultimately, how to upgrade a User Experience.
+          Designing buildings and spaces is, essentially, creative problem solving: 
+          <ul>
+            <li>
+              How to improve the layout of a room to enhance the function of the building / space?
+            </li>
+            <li>
+              How can the building envelope be arranged / shaped to improve the light quality and building climate inside?
+            </li>
+            <li>
+              Ultimately, how can the User Experience be improved or enhanced?
+            </li>
+          </ul>
         </p>
         <p>
-          During construction, unplanned problems often surface - this requires quick 
-          thinking to get to an alternative solution that would take you to the 
-          same goal.
+          During the construction phase, problems pop up daily, which requires quick 
+          thinking for alternative solutions that would reach the same goal.
         </p>
         <p>
-          I believe this way of thinking is an asset in Software Development - 
-          solving User Problems, simplifying a service and creating a better 
-          User Experience in the process.
+          I believe this way of thinking and strategising is an asset for a Software Developer  
+          by solving User Problems, simplifying a service or process and creating an improved 
+          User Experience.
         </p>
 
         <h2>
           I like to learn
         </h2>
         <p>
-          Disinterested about the career prospects along my current path, 
+          Disinterested in my career prospects in the construction industry, 
           I tried coding to see if I liked it. It quickly grew into a habit 
           of coding every day – I got hooked on learning, and I like it!
         </p>
@@ -46,18 +59,19 @@ export default function About() {
         </p>
         <p>
           The more I learn, the more there is to learn, but the pace of learning 
-          would vastly improve if I was working in the field. Therefore, I am 
-          seeking a Junior role as a Front-End Developer.
+          would vastly improve if I was working in the field. What attracts me to 
+          Software Development is the opportunity to continuously learn and grow.
         </p>
 
         <h2>
           I like to build things
         </h2>
         <p>
-          This is the overarching theme of my career path. Starting as an 
+          This is the overarching theme of my career path so far. Starting as an 
           architect, then shifted more to the nuts and bolts of it, as an 
           Architectural Technician, add Project Management and Coordination and 
-          that’s where I am today. The aim has always been to create.
+          that’s where I am today. It's incredibly satisfying to create something 
+          tangible through hard work. 
         </p>
         <p>
           Teamwork, creativity, time-management and good communication are all 

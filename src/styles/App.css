@@ -4,8 +4,8 @@
 body,
 textarea,
 input {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Helvetica, "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
   /* font-family: "Poppins", sans-serif; */
 }
@@ -179,7 +179,7 @@ input {
 }
 
 .name-component {
-  background-image: url("../images/IMG_4090.png");
+  background-image: url("../images/IMG_4100.png");
   background-size: cover;
   height: 100%;
   width: 100%;
