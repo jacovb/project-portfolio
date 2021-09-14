@@ -8,17 +8,6 @@ export default function About() {
         <h1>
           From Architecture to Software Development
         </h1>
-
-        <p>
-          Disinterested in my career prospects in the construction industry, 
-          I tried coding to see if I liked it. It quickly grew into a habit 
-          of coding every day – I got hooked on learning, and I like it!
-        </p>
-        <p>
-          The more I learn, the more there is to learn, but my pace of learning 
-          could vastly improve if I was working in the field. What attracts me to 
-          Software Development is the opportunity to continuously learn and grow.
-        </p>
         
         <h4>
           With my background in Design and Architecture, these are my top 3 transferable 
@@ -29,18 +18,80 @@ export default function About() {
           I like to solve problems
         </h2>
 
+        <p>
+          Building design is, essentially, creative problem-solving: 
+          <ul>
+            <li>
+              How can a building contribute or uplift a street / neighbourhood
+            </li>
+            <li>
+              How can the building envelope be arranged / shaped to improve the 
+              interior light quality and building climate.
+            </li>
+            <li>
+              How to enhance the layout of a space to improve the function of it.
+            </li>
+            <li>
+              Ultimately, how to provide a better User Experience.
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          In my current role, which is more focused on the technical and logistical 
+          aspects of getting a building constructed, problems often arise on site
+          that requires quick thinking. Alternative solutions need to be found in 
+          order to reach the same intended goal.
+        </p>
+
         <h2>
           I like to learn
         </h2>
+
+        <p>
+          What makes every new project unique, is the need to learn the 
+          specific requirements, restrictions, opportunities and context 
+          that relates to that project / building. 
+        </p>
+
+        <p>
+          After doing online courses through FreeCodeCamp, Scrimba, Udemy 
+          and YouTube the real learning leap came when I started building 
+          my own projects using HTML, CSS, JavaScript with React.
+        </p>
+        <p> 
+          There's a parallel between starting a new building design or a new web app: 
+          <ul>
+            <li>
+              Setting out the objective - what problem am I trying to solve?
+            </li>
+            <li>
+              What do I need to learn in order to achieve it? As an example when I needed a 
+              Database and Authorization for an app, I learned how to use 
+              AWS Amplify, Cognito and DynamoDB and GraphQL to access the information.
+            </li>
+          </ul>
+        </p>
 
         <h2>
           I like to build things
         </h2>
 
         <p>
-          These skills are manifested and enhanced with Teamwork, Creativity, 
-          Time-management and Good Communication - all valuable skills that 
-          I bring to the table as a Front-End Developer.
+          This is the overarching theme of my career. It's satisfying to create 
+          something functional and tangible. 
+        </p>
+
+        <p>
+          Whether it's designing and building a school, renovating a kitchen 
+          or creating a web app - the process is similar:
+          <ul>
+            <li>What is the goal?</li>
+            <li>What skills do I need to achieve it?</li>
+            <li>Coordinating and putting all everything together into a final product</li>
+          </ul>
+          What attracts me to Software Development is the 
+          opportunity to continuously learn and grow.
         </p>
         
       </div>
