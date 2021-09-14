@@ -76,22 +76,43 @@ export default function About() {
         <h2>
           I like to build things
         </h2>
-
         <p>
-          This is the overarching theme of my career. It's satisfying to create 
-          something functional and tangible. 
+          This is the overarching theme of my career. I have been involved 
+          in the design and documentation of a school, project-managing house 
+          renovations, coordinated construction site logistics. The process of 
+          creating something functional and tangible is extremely satisfying.
+        </p>
+        <p>
+          Whether it's building a house, renovating a kitchen 
+          or creating a web app - my approach to building is similar:
+          <ul>
+            <li>What is the goal? What do we want to achieve?</li>
+            <li>What skills / tools do I need to achieve it?</li>
+            <li>Coordinating information and putting everything together to execute a solution!</li>
+          </ul>
         </p>
 
+        <h2>Why Software Development?</h2>
+
         <p>
-          Whether it's designing and building a school, renovating a kitchen 
-          or creating a web app - the process is similar:
+          What attracts me to a career in Software Developments is:
           <ul>
-            <li>What is the goal?</li>
-            <li>What skills do I need to achieve it?</li>
-            <li>Coordinating and putting all everything together into a final product</li>
+            <li>
+              The opportunity to continuously learn and grow.
+            </li>
+            <li>
+              Mixing creativity with logical thinking.
+            </li>
+            <li>
+              Future-proofing my career. Unlimited prospects for career development.
+            </li>
+            <li>
+              Flexibility to work from anywhere in the world.
+            </li>
+            <li>
+              Being part of a movement that changes the world.
+            </li>
           </ul>
-          What attracts me to Software Development is the 
-          opportunity to continuously learn and grow.
         </p>
         
       </div>
