@@ -4,6 +4,7 @@ import "./styles/Contact.css";
 import "./styles/Portfolio.css";
 import "./styles/Tooltip.css";
 import "./styles/About.css";
+import "./styles/App-mobile.css";
 import PageLayout from "./components/PageLayout";
 
 function App() {
