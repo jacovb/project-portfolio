@@ -69,7 +69,7 @@ export default function About() {
           Setting out the objective - what problem am I trying to solve?
         </li>
         <li>
-          What do I need to learn in order to achieve it? As an example when I needed a 
+          What do I need to learn in order to achieve it? For example, when I needed a 
           Database and Authorization for an app, I learned how to use 
           AWS Amplify, Cognito and DynamoDB and GraphQL to access the information.
         </li>

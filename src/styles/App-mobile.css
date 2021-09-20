@@ -156,6 +156,7 @@
   .project-link {
     text-align: left;
     font-size: 22px;
+    pointer-events: none;
   }
 
   .project-card,
