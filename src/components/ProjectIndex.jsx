@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStopwatch, faCalculator, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faStopwatch, faCalculator, faRocket, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectIndex() {
 
@@ -15,6 +15,9 @@ export default function ProjectIndex() {
             <a href="#punch-card" className="project-link"><div className="index-icon-container"><FontAwesomeIcon icon={faStopwatch}/></div> Punch-Card</a>
             <a href="#calculator" className="project-link"><div className="index-icon-container"><FontAwesomeIcon icon={faCalculator}/></div> Mortgage Payment Calculator</a>
             <a href="#star-wars" className="project-link"><div className="index-icon-container"><FontAwesomeIcon icon={faRocket}/></div> Star Wars App</a>
+          </div>
+          <div className="arrow-down">
+            <FontAwesomeIcon icon={faArrowDown} className="bounce"/>
           </div>
         </div>
       </div>

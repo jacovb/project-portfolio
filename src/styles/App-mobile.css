@@ -195,6 +195,44 @@
     gap: 0.5rem;
   }
 
+  .arrow-down {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .arrow-down svg {
+    font-size: 30px;
+    color: rgba(185, 28, 28);
+  }
+
+  .bounce {
+    animation: bounce 5s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    5%,
+    20%,
+    25%,
+    50%,
+    75% {
+      transform: translateY(0);
+    }
+    2% {
+      transform: translateY(-20px);
+    }
+    8% {
+      transform: translateY(-12px);
+    }
+  }
+
   /* ------- */
   /* CONTACT */
   /* ------- */
