@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+:root {
+  --dark-red: #780000;
+  --medium-red: #c1121f;
+  --dark-blue: #003049;
+  --medium-blue: #669bbc;
+  --light-yellow: #ffe69c;
+  --medium-yellow: #ffd451;
+  --dark-yellow: #ffac1e;
+}
+
 .portfolio-container {
   display: flex;
   height: 100%;
@@ -164,12 +174,12 @@
 }
 
 .project-link:hover {
-  color: rgba(185, 28, 28);
+  color: var(--dark-red);
 }
 
 .project-link:hover .index-icon-container {
-  border: 2px solid rgba(185, 28, 28);
-  background: rgba(239, 68, 68);
+  border: 2px solid var(--dark-red);
+  background: var(--medium-red);
   transition: all 0.3s ease;
 }
 
@@ -294,7 +304,7 @@
 
 .project-button:hover {
   cursor: pointer;
-  background: rgba(239, 68, 68, 1);
+  background: var(--medium-red);
 }
 
 .project-button:hover svg {

@@ -1,4 +1,14 @@
 @media screen and (max-width: 750px) {
+  :root {
+    --dark-red: #780000;
+    --medium-red: #c1121f;
+    --dark-blue: #003049;
+    --medium-blue: #669bbc;
+    --light-yellow: #ffe69c;
+    --medium-yellow: #ffd451;
+    --dark-yellow: #ffac1e;
+  }
+
   .App {
     height: 100vh;
     overflow: hidden;
@@ -55,7 +65,7 @@
   }
 
   .collapse:hover {
-    background: rgba(239, 68, 68, 1);
+    background: var(--medium-red);
   }
 
   .collapse:hover .collapse-heading-container {
@@ -209,7 +219,7 @@
 
   .arrow-down svg {
     font-size: 30px;
-    color: rgba(185, 28, 28);
+    color: var(--medium-red);
   }
 
   .bounce {

@@ -10,6 +10,16 @@ input {
   /* font-family: "Poppins", sans-serif; */
 }
 
+:root {
+  --dark-red: #780000;
+  --medium-red: #c1121f;
+  --dark-blue: #003049;
+  --medium-blue: #669bbc;
+  --light-yellow: #ffe69c;
+  --medium-yellow: #ffd451;
+  --dark-yellow: #ffac1e;
+}
+
 .header-container {
   display: flex;
   margin: auto;
@@ -32,7 +42,7 @@ input {
 
 .topblock-1 {
   width: calc(30% - 1rem);
-  background-color: rgba(251, 191, 36, 1);
+  background-color: var(--medium-yellow);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -54,17 +64,17 @@ input {
 
 .block-1 {
   width: calc(20% - 0.5rem);
-  background-color: rgba(239, 68, 68, 1);
+  background-color: var(--medium-red);
 }
 
 .block-2 {
   width: 50%;
-  background-color: rgba(59, 130, 246, 1);
+  background-color: var(--medium-blue);
 }
 
 .block-3 {
   width: calc(30% - 1rem);
-  background-color: rgba(251, 191, 36, 1);
+  background-color: var(--medium-yellow);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -82,25 +92,25 @@ input {
 }
 
 .main-navbar-button {
-  background-color: rgba(253, 230, 138);
-  border: 2px solid rgba(245, 158, 11);
+  background-color: var(--light-yellow);
+  border: 2px solid var(--dark-yellow);
   border-radius: 50%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-size: 30px;
-  color: rgba(245, 158, 11);
+  color: var(--dark-yellow);
   text-decoration: none;
   text-align: center;
   width: 50px;
   height: 34px;
   cursor: pointer;
-  box-shadow: 0 3px 10px rgb(255, 165, 9, 1);
+  box-shadow: 0 3px 10px var(--dark-yellow);
 }
 
 .main-navbar-button:hover {
-  background-color: rgba(245, 158, 11);
+  background-color: var(--dark-yellow);
   color: white;
   border: 2px solid white;
   transition: all 0.3s ease;
@@ -115,7 +125,7 @@ input {
 }
 
 .collapse:hover {
-  background: rgba(239, 68, 68, 1);
+  background: var(--medium-red);
 }
 
 .collapse:hover .collapse-heading-container {
@@ -231,7 +241,7 @@ input {
   0% {
     color: black;
   }
-  66% {
+  33% {
     color: black;
     filter: none;
   }
@@ -275,7 +285,7 @@ input {
     width: 100%;
     background: black;
   }
-  75% {
+  50% {
     width: 100%;
     background: black;
     filter: none;
