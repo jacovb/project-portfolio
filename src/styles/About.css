@@ -29,3 +29,9 @@
 .CV canvas {
   width: 100%;
 }
+
+.CV-container {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+}
