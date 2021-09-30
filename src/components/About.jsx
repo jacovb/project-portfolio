@@ -1,11 +1,6 @@
 import React from 'react';
 import CV from './CV';
 
-// import CV from "../images/CV_2021.pdf"
-
-// import { Document, Page, pdfjs } from "react-pdf";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
 export default function About() {
   return (
     <div className="about-container">
@@ -122,11 +117,7 @@ export default function About() {
           Being part of a community that changes the world through technology.
         </li>
       </ul>
-      <h2>Download CV</h2>
-      <CV />
-      {/* <Document file={CV} className="CV"> 
-        <Page pageNumber={1} />
-      </Document>   */}
+      {/* <CV /> */}
     </div>
   )
 }

@@ -26,12 +26,29 @@
   box-shadow: 0 3px 10px #ccc;
 }
 
-.CV canvas {
-  width: 100%;
-}
-
 .CV-container {
   height: 100%;
   width: 100%;
-  border: 2px solid black;
+}
+
+.CV-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.download-icon-container {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px #ccc;
+}
+
+.download-icon-container svg {
+  color: rgb(48, 48, 48);
 }
