@@ -31,7 +31,7 @@ const PageLayout = ({ activeTab, setActiveTab}) => {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         >
-          <About activeTab={activeTab}/>
+          <About />
         </Collapse>
 
         <Collapse
