@@ -26,21 +26,34 @@
   box-shadow: 0 3px 10px #ccc;
 }
 
-.CV-container {
-  height: 100%;
+.CV canvas {
   width: 100%;
 }
 
+.CV-container {
+  height: 100%;
+  width: 250px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.CV-container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 .CV-header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .download-icon-container {
   border: 1px solid black;
   border-radius: 50%;
+  margin-left: 0.5rem;
   height: 30px;
   width: 30px;
   display: flex;

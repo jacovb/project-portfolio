@@ -1,7 +1,7 @@
 import React from 'react';
 import CV from './CV';
 
-export default function About() {
+export default function About({ activeTab }) {
   return (
     <div className="about-container">
       
@@ -117,7 +117,7 @@ export default function About() {
           Being part of a community that changes the world through technology.
         </li>
       </ul>
-      {/* <CV /> */}
+      <CV activeTab={activeTab}/>
     </div>
   )
 }
