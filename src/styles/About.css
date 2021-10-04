@@ -24,6 +24,9 @@
 .CV {
   margin-bottom: 20px;
   box-shadow: 0 3px 10px #ccc;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
 .CV canvas {
@@ -32,12 +35,12 @@
 
 .CV-container {
   height: 100%;
-  width: 250px;
+  width: 350px;
   margin: auto;
   transition: all 0.3s ease;
 }
 
-.CV-container:hover {
+.CV:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
 }

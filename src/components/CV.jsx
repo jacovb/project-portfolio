@@ -19,9 +19,12 @@ export default function CV() {
         </div>
       </div>
       <div className="CV-container">
-        <a href="https://drive.google.com/file/d/16HivLwkpUA3VfnsS_t_F_8Ir2kwmMylj/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+        <a href="https://drive.google.com/file/d/1EUidTR5NCwkBD0CW_cyfLnmM_XGobtb9/view?usp=sharing" target="_blank" rel="noreferrer noopener">
           <Document file={Resume} className="CV"> 
-            <Page pageNumber={1} width={250}/>
+            <Page pageNumber={1} width={350} renderAnnotationLayer={false}/>
+          </Document>
+          <Document file={Resume} className="CV"> 
+            <Page pageNumber={2} width={350} renderAnnotationLayer={false}/>
           </Document>
         </a>
       </div>
