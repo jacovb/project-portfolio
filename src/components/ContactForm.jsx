@@ -22,7 +22,7 @@ export default function ContactForm() {
               <div className="contact-icon-container">
                 <FontAwesomeIcon icon={faPhone} />
               </div>
-              <div>0747 007 4039</div>
+              <div>074 7007 4039</div>
             </div>
 
           </div>

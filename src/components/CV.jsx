@@ -13,7 +13,7 @@ export default function CV() {
   return (
     <>
       <div className="CV-header">
-        <h2>CV</h2>
+        <h1>CV</h1>
         <div className="download-icon-container">
           <FontAwesomeIcon icon={faDownload} />
         </div>

@@ -1,9 +1,17 @@
+:root {
+  --dark-red: #780000;
+  --medium-red: #c1121f;
+  --dark-blue: #003049;
+  --medium-blue: #669bbc;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
   width: calc(5 / 7 * 100%);
   justify-content: center;
   margin-left: calc(1 / 7 * 100%);
+  margin-top: 10px;
   align-items: flex-start;
   text-align: left;
 }
@@ -15,6 +23,7 @@
 
 .about-container ul {
   font-size: 18px;
+  list-style-type: circle;
 }
 
 .about-container h4 {
@@ -51,6 +60,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .download-icon-container {
@@ -67,4 +77,18 @@
 
 .download-icon-container svg {
   color: rgb(48, 48, 48);
+}
+
+.about-container h1,
+.about-container h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-container h2 {
+  color: var(--medium-blue);
+}
+
+.icon-margin {
+  margin-right: 15px;
 }

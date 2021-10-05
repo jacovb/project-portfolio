@@ -1,6 +1,9 @@
 import React from 'react';
 import CV from './CV';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+
 export default function About() {
   return (
     <div className="about-container">
@@ -15,6 +18,7 @@ export default function About() {
       </h4>
 
       <h2>
+        <FontAwesomeIcon icon={faQuoteLeft} className="icon-margin"/>
         I like to solve problems
       </h2>
 
@@ -46,6 +50,7 @@ export default function About() {
       </p>
 
       <h2>
+        <FontAwesomeIcon icon={faQuoteLeft} className="icon-margin"/>
         I like to learn
       </h2>
 
@@ -72,11 +77,12 @@ export default function About() {
         <li>
           What do I need to learn in order to achieve it? For example, when I needed a 
           Database and Authorization for an app, I learned how to use 
-          AWS Amplify, Cognito and DynamoDB and GraphQL to access the information.
+          AWS Amplify, Cognito and DynamoDB with GraphQL to store and access information.
         </li>
       </ul>
 
       <h2>
+        <FontAwesomeIcon icon={faQuoteLeft} className="icon-margin"/>
         I like to build things
       </h2>
       <p>
@@ -91,11 +97,11 @@ export default function About() {
       </p>
       <ul>
         <li>What is the goal? What do we want to achieve?</li>
-        <li>What skills / tools do I need to achieve it?</li>
+        <li>What skills do I need to achieve it?</li>
         <li>Coordinating information and putting everything together to execute a solution!</li>
       </ul>
 
-      <h2>Why Software Development?</h2>
+      <h1>Why Software Development?</h1>
 
       <p>
         What attracts me to a career in Software Developments is:
