@@ -8,7 +8,7 @@ The Layout was inspired by a the famous Mondrian paintings that have influenced 
 
 ### Piet Mondrian - Composition C, 1935 (Tate)
 
-![Piet Mondrian - Composition C, 1935](src/images/mondrian_composition_c.jpg)
+<img src="src/images/mondrian_composition_c.jpg" alt="Piet Mondrian - Composition C, 1935" width=300 />
 
 Initial [Mondrian Portfolio Concept](https://mondrian-portfolio-concept.netlify.app/) tested with GatsbyJS, and Tailwind CSS
 
