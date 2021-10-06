@@ -10,6 +10,8 @@ The Layout was inspired by a the famous Mondrian paintings that have influenced 
 
 ![Piet Mondrian - Composition C, 1935](src/images/mondrian_composition_c.jpg)
 
+Initial [Mondrian Portfolio Concept](https://mondrian-portfolio-concept.netlify.app/) tested with GatsbyJS, and Tailwind CSS
+
 ## What this app does?
 
 - Introduces myself with links to my CV
